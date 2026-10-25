@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+    <h1>1. To Do Manager </h1>
+      <div class="mb-3">
+        <input type="text" class="form-control" id="inputTask">
+        <button id="addTask" onclick="addNewTask()">Add New Task</button>
+        <button id="ClearAllTasks">Clear All</button>
+      </div>
+     <ol id="renderTasks"></ol>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <div class="=container">
+      <h1>2. Student Marks Calculator</h1>
+      <div class="mb-3">
+        <input type="text" class="form-control" id="inputMarks">
+        <button id="addTask" onclick="addMarks()">Add New Marks</button>
+        <button onclick="calculate()">Calculate</button>
+        <button onclick="resetMarks()">Reset</button>
+      </div>
+      <div id="marksRender"></div>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <div class="container">
+      <h1>3. Search in an Array</h1>
+      <div class="mb-3">
+        <input type="text" class="form-control" id="inputTask">
+        <button id="searchTask" onclick="searchArray()">Search</button>
+      </div>
+      <div id="result"></div>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <div class="container">
+      <h1>4. Filter Even and Odd Numbers</h1>
+      <div class="mb-3">
+        <input type="number" class="form-control" id="inputTask">
+        <button id="numberInput" onclick="addNumbers()">Add Number</button>
+        <button onclick="showEven()">Show Even</button>
+        <button onclick="showOdd()">Show Odd</button>
+        <button onclick="clear()">Clear</button>
+      </div>
+        <div class="number-card original-card mb-3">
+            <div class="card-header original-header">
+                Original Array
+            </div>
+
+            <div class="number-list" id="originalArray"></div>
+        </div>
+         <div class="col-12 col-md-6">
+                <div class="number-card even-card">
+                    <div class="card-header even-header">
+                        Even Numbers
+                    </div>
+
+                    <div class="number-list" id="evenArray"></div>
+                </div>
+          </div>
+          <div class="col-12 col-md-6">
+                <div class="number-card odd-card">
+                    <div class="card-header odd-header">
+                        Odd Numbers
+                    </div>
+
+                    <div class="number-list" id="oddArray"></div>
+                </div>
+          </div>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <div class="container">
+      <h1>5. Sorts Names Alphabetically</h1>
+      <div class="mb-3">
+        <input type="text" class="form-control" id="inputTask">
+        <button  onclick="sortNames()">Sort</button>
+        <button onclick="resetNames()">Reset</button>
+      </div>
+      <p id="nameList"></p>
+    </div>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
